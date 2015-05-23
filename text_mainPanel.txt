@@ -1,0 +1,7 @@
+---
+
+The main panel will display information based on your input, such as:
+
+- the selected outcome and its summary
+- the selected predictor and its summary
+- if selected, the variables used in the regression model will be shown

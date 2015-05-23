@@ -1,1 +1,126 @@
-My Page
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>my shiny app</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<meta name="description" content="my shiny app">
+	<meta name="author" content="rgeos">
+	<meta name="generator" content="slidify" />
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" media="print"
+	  href="libraries/frameworks/shower/themes/ribbon/styles/print.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css">  
+	<!--
+		To apply styles to the certain slides
+		use slide ID to get needed elements
+		-->
+	<style>
+		#Cover h2 {
+      margin:65px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+		#FitToWidth h2,
+		#FitToHeight h2 {
+			color:#FFF;
+			text-align:center;
+			}
+	</style> 
+</head>
+<body class="list">
+  <header class="caption">
+  	<h1>my shiny app</h1>
+	</header>
+  <section class="slide " id="slide-1">
+  <div>
+    <h2>Overview</h2>
+    <table><thead>
+<tr>
+<th align="right"></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="right"><strong>Name</strong>&gt;</td>
+<td>My Shiny App - (MSA)</td>
+</tr>
+<tr>
+<td align="right"><strong>Audience</strong>&gt;</td>
+<td>For car enthousiasts</td>
+</tr>
+<tr>
+<td align="right"><strong>Dataset</strong>&gt;</td>
+<td><code>mtcars</code></td>
+</tr>
+<tr>
+<td align="right"><strong>Purpose</strong>&gt;</td>
+<td>Analyze the relationship between multiple variables (<strong>e.g.</strong> <em>mpg</em>, <em>transmission</em>) and how are they correlated</td>
+</tr>
+<tr>
+<td align="right"><strong>Link</strong>&gt;</td>
+<td><a href="https://rgeos.shinyapps.io/DataProducts/">Try it here</a> - the link will open in a new window</td>
+</tr>
+</tbody></table>
+
+  </div>
+</section>
+<section class="slide " id="slide-2">
+  <div>
+    <h2>Control Panel</h2>
+    <p>This is a sample screen shot from the app.<br>
+From the drop down menu choose <code>Miles Per Gallon</code> and use as predictor the <code>Transmission</code> as shown in the picture below:
+<img src="libraries/pics/ScreenShot0.png" alt="alt text" title="Screen Shot"></p>
+
+  </div>
+</section>
+<section class="slide class1" id="id">
+  <div>
+    <h2>Main Panel</h2>
+    <p>The application will printout a short summary of the selected variables. We will show only one of it below.</p>
+
+<pre><code class="r">summary(mtcars$mpg)
+</code></pre>
+
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   10.40   15.42   19.20   20.09   22.80   33.90
+</code></pre>
+
+  </div>
+</section>
+<section class="slide " id="slide-4">
+  <div>
+    <h2>Plot Panel</h2>
+    <p>It will also make some plots as the box plots shown below.
+<img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"> </p>
+
+  </div>
+</section>
+<section class="slide " id="slide-5">
+  <div>
+    <h2>Plot Panel (cont)</h2>
+    <p>If you chose to show the plots for the regression model, the app will use these variables<code>list, mpg, wt, qsec, am</code>.</p>
+
+<p>Scroll down the page and you will be able to see the plots related to the regression model.</p>
+
+<blockquote>
+<p><strong>ENJOY</strong></p>
+</blockquote>
+
+  </div>
+</section>
+  <div class="progress">
+    <div></div>
+  </div>
+	<script src="libraries/frameworks/shower/shower.js"></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+		<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	<!-- Photos by John Carey — fiftyfootshadows.net -->
+</body>
+</html>

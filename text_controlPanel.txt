@@ -1,0 +1,18 @@
+---
+
+In this area you have  
+- Outcome drop down dialog from where you can choose  
+ + Miles per gallon
+ + Horse power
+ + Weight
+- Predictor radio button choices with
+ + Number of cylinders
+ + Type of transmission (manual, automatic)
+- A regression model boolean option
+
+You can choose a combination of `Outcome` and `Predictor` in order to plot a
+correlation matrix and boxplot.
+
+The boolean labeled `Show regression model plots` will plot at the bottom of
+the page 4 charts representing the relation between the automatically chosen
+predictive variables.

@@ -1,0 +1,72 @@
+---
+title       : my shiny app
+subtitle    : subtest
+author      : rgeos
+job         : savior of myself
+framework   : shower        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+# Overview
+
+|  |   |
+| ---:| --- |
+| **Name**> | My Shiny App - (MSA) |
+| **Audience**>  | For car enthousiasts |
+| **Dataset**> | `mtcars` |
+| **Purpose**> | Analyze the relationship between multiple variables (**e.g.** *mpg*, *transmission*) and how are they correlated |
+| **Link**> | [Try it here](https://rgeos.shinyapps.io/DataProducts/) - the link will open in a new window |
+
+---
+
+# Control Panel
+
+This is a sample screen shot from the app.  
+From the drop down menu choose `Miles Per Gallon` and use as predictor the `Transmission` as shown in the picture below:
+![alt text][pic]
+
+[pic]: libraries/pics/ScreenShot0.png "Screen Shot"
+
+--- .class1  #id bg:yellow
+
+# Main Panel
+
+```{r echo=FALSE, eval=FALSE}
+data(mtcars)
+```
+
+The application will printout a short summary of the selected variables. We will show only one of it below.
+
+```{r}
+summary(mtcars$mpg)
+```
+
+---
+
+# Plot Panel
+
+It will also make some plots as the box plots shown below.
+```{r echo=FALSE}
+boxplot(mtcars$mpg ~ mtcars$am, col = adjustcolor(palette(), alpha.f = .3), pars=list(boxwex=.5,outwex=.4))
+```
+
+---
+
+# Plot Panel (cont)
+
+```{r echo=FALSE}
+regressionModel = function() {
+  initialFit  = lm(mpg ~ ., data = mtcars)
+  bestFit     = step(initialFit, trace = 0)
+}
+```
+
+If you chose to show the plots for the regression model, the app will use these variables``r attr(summary(regressionModel())$terms, which = "variables")``.
+
+Scroll down the page and you will be able to see the plots related to the regression model.
+
+> **ENJOY**

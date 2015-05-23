@@ -1,0 +1,13 @@
+---
+
+The plotting area will change depeding on your input from the Control Panel.
+
+There are 3 types of plots shown:  
+- Data pairs plot - this is a scatterplot matrix which shows the correlation
+  between the chosen variables in the upper panel and the histogram of each
+variable on the diagonal
+- Box plot - this plot shows the relation between the outcome and the
+  predictor in a boxplot format
+- Regression model plots - are shown only if the `Show regression model plots`
+  boolean is chosen. There are 4 plots showing the *Fitted values*,
+*Theoretical quantiles*, *Scale values* and *Leverage*
